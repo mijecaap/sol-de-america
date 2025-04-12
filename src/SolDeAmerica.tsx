@@ -6,7 +6,7 @@ import {
   Nosotros,
   Servicios,
 } from "./components";
-import { BackToTop, WhatsAppButton } from "./components/shared";
+import { BackToTop, WhatsAppButton, Footer } from "./components/shared";
 
 export const SolDeAmerica = () => {
   return (
@@ -19,6 +19,7 @@ export const SolDeAmerica = () => {
         <Flota />
         <ContactForm />
       </main>
+      <Footer />
       <BackToTop />
       <WhatsAppButton />
     </>
