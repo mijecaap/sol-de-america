@@ -2,9 +2,9 @@ import BackgroundImage from "../images/background.jpg";
 
 export const Banner = () => {
   return (
-    <section id="inicio" className="w-full h-[100vh] min-h-[700px] relative flex justify-center">
+    <section id="inicio" className="w-full h-[80vh] min-h-[600px] relative flex justify-center">
       <img
-        className="w-full h-[100vh] min-h-[700px] absolute object-cover lg:object-center md:object-left sm:object-left m-sm:object-left -z-10"
+        className="w-full h-full absolute object-cover lg:object-center md:object-left sm:object-left m-sm:object-left -z-10"
         src={BackgroundImage}
         alt=""
       />
