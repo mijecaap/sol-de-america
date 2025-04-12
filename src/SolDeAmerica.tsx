@@ -1,10 +1,12 @@
 import {
   Banner,
+  ContactForm,
   Flota,
   Header,
   Nosotros,
   Servicios,
 } from "./components";
+import { BackToTop, WhatsAppButton } from "./components/shared";
 
 export const SolDeAmerica = () => {
   return (
@@ -15,7 +17,10 @@ export const SolDeAmerica = () => {
         <Servicios />
         <Nosotros />
         <Flota />
+        <ContactForm />
       </main>
+      <BackToTop />
+      <WhatsAppButton />
     </>
   );
 };
