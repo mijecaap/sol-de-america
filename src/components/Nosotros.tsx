@@ -1,48 +1,77 @@
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import coelvisac from "../images/coelvisac.png";
 
 export const Nosotros = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="nosotros" className="bg-[url(/src/images/background-2.png)] bg-no-repeat bg-cover bg-right flex justify-center">
-      <div className="max-w-[1200px] py-12 md:px-12 m-md:px-6 flex justify-end">
-        <div className="xl:max-w-[50%] lg:max-w-[65%] p-8 flex flex-col rounded-2xl gap-4 text-white text-pretty bg-[#D9D9D9] bg-opacity-20">
-          <h2 className="font-bold text-4xl text-center mb-4">
+    <section id="nosotros" className="bg-[url(/src/images/background-2.png)] bg-no-repeat bg-cover bg-center flex justify-center min-h-screen relative">
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+      <div className="max-w-[1200px] py-16 md:px-12 m-md:px-6 flex justify-end relative z-10">
+        <div 
+          ref={elementRef}
+          className={`xl:max-w-[55%] lg:max-w-[70%] p-10 flex flex-col rounded-3xl gap-6 text-white text-pretty backdrop-blur-sm fade-in-section ${
+            isVisible ? "is-visible" : ""
+          }`}
+        >
+          <h1 className="text-4xl md:text-6xl font-bold text-left pb-6 leading-tight bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent">
             Nuestra experiencia en el transporte de carga terrestre
-          </h2>
-          <p className="text-sm font-normal">
-            Con más de 19 años de experiencia en el sector del transporte de
-            carga terrestre, nuestra empresa se ha consolidado como líder en el
-            mercado. Durante todos estos años hemos trabajado con una gran
-            variedad de clientes, desde pequeñas empresas hasta grandes
-            corporaciones.
-          </p>
-          <p className="text-sm font-normal">
-            En nuestra empresa, la seguridad es nuestra prioridad núermo uno.
-            Por eso, todos nuestros conductores están altamente capacitados y
-            cumplen con todas las normas de seguridad en el camino. Además,
-            todos nuestros vehículos están equipados con los mejores sistemas de
-            seguridad y rastreo para garantizar un transporte seguro y
-            eficiente.
-          </p>
-          <p className="text-sm font-normal">
-            En cuanto al cumplimiento, nos aseguramos de cumplir con todas las
-            regulaciones y leyes relacionadas con el transporte de carga
-            terrestre. Estamos registrados y regulados por el MTC y cumplimos
-            con todas las normas de seguridad y medio ambiente.
-          </p>
-          <p className="text-sm font-normal">
-            Nos enorgullecemos de ofrecer un servicio de transporte de carga
-            terrestre de alta calidad y estamos comprometidos a seguir brindando
-            un servicio excepcional a nuestros clientes en el futuro.
-          </p>
-          <h2 className="font-bold text-2xl text-center mt-12 ">Nuestros Clientes</h2>
-          <div className="grid grid-cols-12">
-            <img className="col-span-2 justify-self-center" src={coelvisac} alt="" />
-            <img className="col-span-2 justify-self-center" src={coelvisac} alt="" />
-            <img className="col-span-2 justify-self-center" src={coelvisac} alt="" />
-            <img className="col-span-2 justify-self-center" src={coelvisac} alt="" />
-            <img className="col-span-2 justify-self-center" src={coelvisac} alt="" />
-            <img className="col-span-2 justify-self-center" src={coelvisac} alt="" />
+          </h1>
 
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold text-yellow-400 mb-3">
+                Trayectoria y Confianza
+              </h3>
+              <p className="text-base md:text-lg font-normal leading-relaxed">
+                Con más de 19 años de experiencia en el sector del transporte de
+                carga terrestre, nos hemos consolidado como líderes en el
+                mercado, sirviendo desde pequeñas empresas hasta grandes
+                corporaciones.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold text-yellow-400 mb-3">
+                Nuestra Prioridad: Seguridad
+              </h3>
+              <ul className="list-disc list-inside space-y-2 text-base md:text-lg">
+                <li>Conductores altamente capacitados y certificados</li>
+                <li>Sistemas avanzados de seguridad y rastreo en tiempo real</li>
+                <li>Mantenimiento preventivo riguroso de nuestra flota</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold text-yellow-400 mb-3">
+                Regulaciones y Cumplimiento
+              </h3>
+              <ul className="list-disc list-inside space-y-2 text-base md:text-lg">
+                <li>Registrados y regulados por el MTC</li>
+                <li>Cumplimiento estricto de normas de seguridad</li>
+                <li>Compromiso con el medio ambiente</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <button onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })} 
+                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
+              Solicita una cotización
+            </button>
+          </div>
+
+          <div className="mt-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Confían en Nosotros</h2>
+            <p className="text-center text-gray-300 mb-8">Empresas líderes que respaldan nuestro servicio</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
+              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
+              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
+              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
+              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
+              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
+            </div>
           </div>
         </div>
       </div>
