@@ -19,21 +19,21 @@ const ServiceCard = ({ title, description, icon, features }: ServiceCardProps) =
   const buttonText = title.replace('Transporte de ', '');
 
   return (
-    <div className="xl:col-span-6 sm:col-span-6 m-sm:col-span-12 group">
-      <div className="h-full p-8 flex flex-col gap-8 rounded-2xl border-2 border-white/20 backdrop-blur-sm bg-white/10 transition-all duration-300 hover:bg-white/15 hover:shadow-lg relative overflow-visible">
+    <div className="xl:col-span-6 lg:col-span-12 md:col-span-12 col-span-12 group">
+      <div className="h-full p-6 md:p-8 flex flex-col gap-6 md:gap-8 rounded-2xl border-2 border-white/20 backdrop-blur-sm bg-white/10 transition-all duration-300 hover:bg-white/15 hover:shadow-lg relative overflow-visible">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
-        <div className="flex items-start gap-6">
-          <div className="size-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-[#DE7E0B]/30 backdrop-blur-sm border border-[#DE7E0B]/40 group-hover:bg-[#DE7E0B]/40 transition-all duration-300">
-            <i className={`${icon} text-2xl text-[#DE7E0B] group-hover:text-[#ffa640] transition-colors duration-300`} aria-hidden="true" />
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
+          <div className="size-14 md:size-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-[#DE7E0B]/30 backdrop-blur-sm border border-[#DE7E0B]/40 group-hover:bg-[#DE7E0B]/40 transition-all duration-300">
+            <i className={`${icon} text-xl md:text-2xl text-[#DE7E0B] group-hover:text-[#ffa640] transition-colors duration-300`} aria-hidden="true" />
           </div>
 
-          <div className="flex flex-col gap-3 text-pretty">
-            <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90">
+          <div className="flex flex-col gap-2 md:gap-3 text-center md:text-left">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90">
               {title}
             </h3>
             
-            <p className="text-base md:text-lg font-normal leading-relaxed text-white/90">
+            <p className="text-sm md:text-base lg:text-lg font-normal leading-relaxed text-white/90">
               {description}
             </p>
           </div>
@@ -48,10 +48,10 @@ const ServiceCard = ({ title, description, icon, features }: ServiceCardProps) =
           ))}
         </ul>
 
-        <div className="mt-auto space-y-4 z-10">
+        <div className="mt-auto space-y-3 md:space-y-4 z-10">
           <button 
             onClick={handleClick}
-            className="w-full bg-[#DE7E0B] rounded-xl py-4 px-6 text-base md:text-lg font-semibold hover:bg-[#c26c0a] transition-all duration-300 transform hover:scale-105 active:scale-95 group/button shadow-lg"
+            className="w-full bg-[#DE7E0B] rounded-xl py-3 md:py-4 px-4 md:px-6 text-sm md:text-base lg:text-lg font-semibold hover:bg-[#c26c0a] transition-all duration-300 transform hover:scale-105 active:scale-95 group/button shadow-lg"
           >
             Cotizar {buttonText}
             <i className="fa-solid fa-arrow-right ml-2 group-hover/button:translate-x-1 transition-transform" aria-hidden="true" />
@@ -115,23 +115,23 @@ export const Servicios = () => {
     <section id="servicios" className="w-full h-auto bg-[#232526] flex justify-center">
       <div 
         ref={elementRef}
-        className={`max-w-[1200px] py-24 md:px-12 m-md:px-6 text-center flex flex-col gap-16 text-white items-center fade-in-section ${
+        className={`max-w-[1200px] py-16 md:py-24 px-4 md:px-12 text-center flex flex-col gap-12 md:gap-16 text-white items-center fade-in-section ${
           isVisible ? "is-visible" : ""
         }`}
       >
         <div className="flex flex-col items-center gap-4">
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90">
             Nuestros Servicios
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#DE7E0B] to-[#ffa640] rounded-full mt-2"></div>
-          <p className="md:max-w-[70%] m-md:max-w-full text-lg font-normal text-pretty mx-auto mt-4 text-white/90">
+          <div className="w-20 md:w-24 h-1 bg-gradient-to-r from-[#DE7E0B] to-[#ffa640] rounded-full mt-2"></div>
+          <p className="md:max-w-[70%] text-base md:text-lg font-normal text-pretty mx-auto mt-4 text-white/90">
             Nuestra empresa ofrece una amplia variedad de servicios de transporte
             de carga terrestre para satisfacer las necesidades específicas de 
             cada cliente.
           </p>
         </div>
 
-        <div className="grid grid-cols-12 gap-12">
+        <div className="grid grid-cols-12 gap-6 md:gap-8 lg:gap-12">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
