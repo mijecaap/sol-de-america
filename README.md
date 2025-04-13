@@ -1,61 +1,123 @@
-# Sol de América Landing Page
+# Sol de América E.I.R.L - Landing Page
 
-# Demo
+![Sol de América Logo](./public/logo.png)
 
-[Link](https://sol-de-america.netlify.app/)
+## 🌟 Descripción
 
-# Description
+Landing page moderna y profesional para Sol de América E.I.R.L, una empresa líder en transporte de carga por carretera con más de 19 años de experiencia. Este proyecto está desarrollado con tecnologías modernas como React, TypeScript, Vite y Tailwind CSS, ofreciendo una experiencia de usuario óptima y responsive.
 
-This project serves as a landing page for Sol de América. It is built using React, Vite, and TypeScript.
+### 🚀 Características Principales
 
-# Installation
+- Diseño moderno y responsive
+- Animaciones suaves de scroll
+- Formulario de contacto con validaciones
+- Integración con WhatsApp
+- Mapa de ubicación interactivo
+- Optimización SEO
+- Alto rendimiento y accesibilidad
 
-To install the necessary dependencies, run:
+## 🛠️ Tecnologías Utilizadas
 
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Font Awesome
+- PostCSS
+- ESLint
+
+## 📦 Requisitos Previos
+
+- Node.js 20.11.0 o superior
+- npm o yarn
+
+## 🔧 Instalación
+
+1. Clonar el repositorio:
+\`\`\`bash
+git clone <url-del-repositorio>
+cd sol-de-america
+\`\`\`
+
+2. Instalar dependencias:
+\`\`\`bash
 npm install
+\`\`\`
 
-# Usage
+## 🚀 Scripts Disponibles
 
-To start the development server, run:
-
+- **Desarrollo**: Inicia el servidor de desarrollo
+\`\`\`bash
 npm run dev
+\`\`\`
 
-To build the project, run:
-
+- **Construcción**: Genera la versión de producción
+\`\`\`bash
 npm run build
+\`\`\`
 
-To preview the production build locally, run:
-
+- **Vista Previa**: Previsualiza la versión de producción
+\`\`\`bash
 npm run preview
+\`\`\`
 
-# Scripts
+- **Linting**: Ejecuta el análisis de código
+\`\`\`bash
+npm run lint
+\`\`\`
 
-- **dev**: Starts the development server.
-- **build**: Builds the project for production.
-- **lint**: Lints the project files.
-- **preview**: Previews the production build locally.
+## 📱 Características Responsive
 
-# Dependencies
+- Diseño completamente adaptativo
+- Menú móvil optimizado
+- Imágenes optimizadas para diferentes dispositivos
+- Elementos interactivos adaptados para dispositivos táctiles
 
-- [React](https://www.npmjs.com/package/react) (^18.2.0)
-- [React DOM](https://www.npmjs.com/package/react-dom) (^18.2.0)
+## 🎯 SEO y Rendimiento
 
-# Dev Dependencies
+- Meta tags optimizados
+- Imágenes optimizadas
+- Lazy loading de componentes
+- Animaciones optimizadas para rendimiento
 
-- [@types/react](https://www.npmjs.com/package/@types/react) (^18.2.43)
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom) (^18.2.17)
-- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) (^6.14.0)
-- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) (^6.14.0)
-- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react) (^4.2.1)
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer) (^10.4.17)
-- [eslint](https://www.npmjs.com/package/eslint) (^8.55.0)
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) (^4.6.0)
-- [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh) (^0.4.5)
-- [postcss](https://www.npmjs.com/package/postcss) (^8.4.33)
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss) (^3.4.1)
-- [typescript](https://www.npmjs.com/package/typescript) (^5.2.2)
-- [vite](https://www.npmjs.com/package/vite) (^5.0.8)
+## 📈 Analíticas y Seguimiento
 
-# Author
+- Integración preparada para Google Analytics
+- Eventos personalizados para seguimiento de interacciones
+- Métricas de rendimiento
 
-- **Miguel Castro**
+## 🔒 Seguridad
+
+- Validaciones de formularios
+- Sanitización de inputs
+- Headers de seguridad configurados
+- Protección contra ataques XSS
+
+## 🌐 Despliegue
+
+El proyecto está configurado para ser desplegado en cualquier plataforma moderna de hosting. Actualmente se encuentra desplegado en:
+
+[https://mijecaap.github.io/sol-de-america/](https://mijecaap.github.io/sol-de-america/)
+
+## 🤝 Contribución
+
+Las contribuciones son bienvenidas. Por favor, asegúrate de:
+
+1. Hacer fork del proyecto
+2. Crear una rama para tu característica
+3. Commit y push de tus cambios
+4. Crear un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## ✨ Autor
+
+**Miguel Castro**
+- GitHub: [@tucuenta](https://github.com/mijecaap)
+- LinkedIn: [Miguel Castro](https://www.linkedin.com/in/mijecaap/)
+
+---
+
+Hecho con ❤️ por Miguel Castro
