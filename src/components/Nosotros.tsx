@@ -1,5 +1,10 @@
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
-import coelvisac from "../images/coelvisac.png";
+import coelvisac from "../images/marcas/coelvisac.jpeg";
+import delcrosa from "../images/marcas/delcrosa.jpeg";
+import metalindustrias from "../images/marcas/metalindustrias.jpeg";
+import promelsa from "../images/marcas/promelsa.jpeg";
+import sanmiguel from "../images/marcas/sanmiguel.jpeg";
+import xylem from "../images/marcas/xylem.jpeg";
 
 export const Nosotros = () => {
   const { elementRef, isVisible } = useScrollAnimation();
@@ -61,16 +66,52 @@ export const Nosotros = () => {
             </button>
           </div>
 
-          <div className="mt-12">
+          <div className="mt-16">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Confían en Nosotros</h2>
             <p className="text-center text-gray-300 mb-8">Empresas líderes que respaldan nuestro servicio</p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
-              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
-              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
-              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
-              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
-              <img className="w-full max-w-[120px] justify-self-center hover:scale-110 transition-transform filter brightness-0 invert opacity-80 hover:opacity-100" src={coelvisac} alt="Logo Coelvisac" />
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 px-4">
+              <div className="bg-white p-4 rounded-xl hover:scale-110 transition-transform" title="Coelvisac">
+                <img 
+                  className="w-full max-w-[180px] h-[90px] object-cover justify-self-center" 
+                  src={coelvisac} 
+                  alt="Logo Coelvisac" 
+                />
+              </div>
+              <div className="bg-white p-4 rounded-xl hover:scale-110 transition-transform" title="Delcrosa">
+                <img 
+                  className="w-full max-w-[180px] h-[90px] object-cover justify-self-center" 
+                  src={delcrosa} 
+                  alt="Logo Delcrosa" 
+                />
+              </div>
+              <div className="bg-white p-4 rounded-xl hover:scale-110 transition-transform" title="Metalindustrias">
+                <img 
+                  className="w-full max-w-[180px] h-[90px] object-cover justify-self-center" 
+                  src={metalindustrias} 
+                  alt="Logo Metalindustrias" 
+                />
+              </div>
+              <div className="bg-white p-4 rounded-xl hover:scale-110 transition-transform" title="Promelsa">
+                <img 
+                  className="w-full max-w-[180px] h-[90px] object-cover justify-self-center" 
+                  src={promelsa} 
+                  alt="Logo Promelsa" 
+                />
+              </div>
+              <div className="bg-white p-4 rounded-xl hover:scale-110 transition-transform" title="San Miguel">
+                <img 
+                  className="w-full max-w-[180px] h-[90px] object-cover justify-self-center" 
+                  src={sanmiguel} 
+                  alt="Logo San Miguel" 
+                />
+              </div>
+              <div className="bg-white p-4 rounded-xl hover:scale-110 transition-transform" title="Xylem">
+                <img 
+                  className="w-full max-w-[180px] h-[90px] object-cover justify-self-center" 
+                  src={xylem} 
+                  alt="Logo Xylem" 
+                />
+              </div>
             </div>
           </div>
         </div>
